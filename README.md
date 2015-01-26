@@ -25,7 +25,7 @@ There are three options:
 
 `position:` (string) The standard Leaflet.Control position parameter. Optional, defaults to 'topleft'
 
-`update_map: (function) The callback function that is called periodically
+`update_map`: (function) The callback function that is called periodically
 
 `title:` (object) An object that defines the message that is displayed on the map when liveupdate is
 toggled on or off. A [Leaflet.Messagebox](https://github.com/tinuzz/leaflet-messagebox)
