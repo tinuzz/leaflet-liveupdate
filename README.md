@@ -6,14 +6,14 @@ Leaflet.Liveupdate is a simple control to update features of a
 [Leaflet](http://leafletjs.com/) map periodically using a callback function.
 
 A control button is added to the map, with which the live updates can
-be stopped an restarted.
+be stopped and restarted.
 
 ## Using the Liveupdate
 
     L.control.liveupdate ({
         update_map: function () {
             ...
-				},
+        },
         position: 'topleft'
     })
     .addTo(map)
@@ -29,7 +29,12 @@ There are three options:
 
 `title:` (object) An object that defines the message that is displayed on the map when liveupdate is
 toggled on or off. A [Leaflet.Messagebox](https://github.com/tinuzz/leaflet-messagebox)
-must be added to the map for this to work.
+must be added to the map for this to work. Optional, defaults to
+
+    {
+        'false': 'Start live updates',
+        'true': 'Stop live updates'
+    }
 
 ## TODO ##
 
