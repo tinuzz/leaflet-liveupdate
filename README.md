@@ -21,7 +21,7 @@ be stopped and restarted.
 
 ## Available Options:
 
-There are three options:
+There are some options:
 
 `position:` (string) The standard Leaflet.Control position parameter. Optional, defaults to 'topleft'
 
