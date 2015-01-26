@@ -10,6 +10,7 @@ L.Control.Liveupdate = L.Control.extend({
         },
         is_updating: true,
         update_track: false,  // callback function
+				interval: 10000
     },
 
     onAdd: function (map) {
@@ -71,7 +72,7 @@ L.Control.Liveupdate = L.Control.extend({
         update_track(this);
         this.timer = setInterval(function() {
             update_track (_this);
-        }, 10000);
+        }, this.options.interval);
     },
 
     stopUpdating: function () {
