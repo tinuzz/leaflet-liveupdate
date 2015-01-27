@@ -9,8 +9,8 @@ L.Control.Liveupdate = L.Control.extend({
             'true': 'Stop live updates'
         },
         is_updating: true,
-        update_track: false,  // callback function
-				interval: 10000
+        update_map: false,  // callback function
+        interval: 10000
     },
 
     onAdd: function (map) {
@@ -59,19 +59,21 @@ L.Control.Liveupdate = L.Control.extend({
             this.startUpdating ();
             a = 'started';
         }
-        this._map.messagebox.show('Live updates ' + a);
+        if (this._map.messagebox) {
+            this._map.messagebox.show('Live updates ' + a);
+        }
     },
 
     startUpdating: function () {
 
         var map = this._map;
-        var update_track = this.options.update_track;
+        var update_map = this.options.update_map;
         var _this = this;
 
         this._setUpdating(true);
-        update_track(this);
+        update_map(this);
         this.timer = setInterval(function() {
-            update_track (_this);
+            update_map(_this);
         }, this.options.interval);
     },
 
