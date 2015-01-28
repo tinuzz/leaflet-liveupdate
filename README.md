@@ -6,7 +6,7 @@ Leaflet.Liveupdate is a simple control to update features of a
 [Leaflet](http://leafletjs.com/) map periodically using a callback function.
 
 A control button is added to the map, with which the live updates can
-be stopped and restarted.
+be stopped and restarted. ([Demo](https://www.grendelman.net/leaflet/))
 
 ## Using the Liveupdate
 
