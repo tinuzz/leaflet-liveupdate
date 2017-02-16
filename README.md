@@ -42,15 +42,15 @@ update should be repeated. Optional, defaults to 10000 (10 seconds).
 
 ## Public methods
 
-isUpdating(): Is the control currently active? Returns true or false.
+`isUpdating()`: Is the control currently active? Returns true or false.
 
-toggleUpdating(): Stop updating when active, start updating otherwise. Returns 'this'.
+`toggleUpdating()`: Stop updating when active, start updating otherwise. Returns 'this'.
 
-startUpdating(): Start updating. Returns 'this'.
+`startUpdating()`: Start updating. Returns 'this'.
 
-stopUpdating(): Stop updating. Returns 'this'.
+`stopUpdating()`: Stop updating. Returns 'this'.
 
-updateNow(): Run the update function once, regardless of isUpdating().  Returns 'this'.
+`updateNow()`: Run the update function once, regardless of isUpdating().  Returns 'this'.
 
 ## Styling ##
 
