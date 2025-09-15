@@ -52,6 +52,12 @@ update should be repeated. Optional, defaults to 10000 (10 seconds).
 
 `updateNow()`: Run the update function once, regardless of isUpdating().  Returns 'this'.
 
+## Events
+
+When `startUpdating()` is done, it emits a `liveupdatestart`.
+
+When `stopUpdating()` is done, it emits a `liveupdatestop`.
+
 ## Styling ##
 
 The liveupdate button can be styled with CSS, see [the css file](leaflet-liveupdate.css) for details.
